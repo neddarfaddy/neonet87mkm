@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
+         
+<link href="https://fonts.cdnfonts.com/css/red-hat-display" rel="stylesheet">
+<link rel="stylesheet" href="/css.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>Faddy's Game</title>
+<link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
+                
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+ /* Add this CSS for the animation */
+ 
+  /* Add this CSS for the animation */
+ /* Add this CSS for the animation */
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.landing > h1 {
+  font-size: 150px;
+  width: 200%;
+  z-index: 1;
+  margin-top: 200px;
+
+  /* Add animation properties */
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: moveText 50s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+/* Rest of your existing CSS */
+    @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+    ::-webkit-scrollbar {
+      width: 12px;
+      background: #101010;
+      height: 12px;
+    }
+    
+    /* handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #c90e0e;
+    }
+    
+    /* handle on active */
+    ::-webkit-scrollbar-thumb:active {
+      background: #000000;
+    }
+    
+    /* scrollbar track */
+    ::-webkit-scrollbar-track {
+      background: #3a3a3a63;
+    }
+    
+    /* scrollbar handle */
+    ::-webkit-scrollbar-thumb {
+      background: #d6d6d6;
+    }
+body {
+  z-index: 3;
+  overflow-x: hidden;
+ 
+}
+  * {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;                        
+  }
+  
+
+main {
+  width: 100%;
+  background-color: #101010;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+}
+header {
+
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  
+  width: 90%;
+  justify-content: end;
+  gap: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+ 
+}
+nav > a {
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  transition: transform 1s ease-in-out ;
+}
+nav > a:hover {
+  
+  transform: scale(1.4);
+  
+}
+
+.landing > h1 {
+  font-size: 170px;
+  width: 340%;
+  z-index: 1;
+  margin-top: 0;
+  
+}
+  .about {
+    background-color: #ffffff;
+    width: 100%;
+
+    margin: auto;
+    z-index: 3;
+    
+overflow: hidden;
+    height: 100vh;
+    
+  }
+  .left {
+    
+    text-align: start;
+    
+    margin-top: 200px;
+    
+    gap: 30px;
+    flex-direction: column;
+    
+    align-items: start;
+   
+    
+
+  }
+  .left > h1 {
+    font-size: 75px;
+    margin-left: 226px;
+    color: #000000;
+    font-weight: 500;
+  }
+  .left > p {
+    width: 70%;
+    font-size: 30px;
+    color: #000000;
+    letter-spacing: 2px;
+    margin-left: 226px;
+    
+  }
+  .images {
+    margin-left: 215px;
+    gap: 20px;
+    margin-top: 50px;
+    display: inline-flex;
+  }
+ .right {
+    display: flex;
+   
+    align-items: start;
+    margin-top: -130px;
+    height: 40vh;
+   
+  }
+  .arrow {
+    background-color: #101010;
+    margin-left: 500px;
+    width: 20vw;
+  }
+  .right > div {
+   
+    margin-left: 1400px;
+    height:65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+   
+    border-radius: 1000px;
+    background-color: #000000;
+  }
+  .right > div > h1 {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30px;
+  }
+  .left a {
+    width: 20%;
+    transition: transform 1s ease-in-out;
+  }
+  .left a:hover {
+    width: 20%;
+    transform: scale(1.2);
+  }
+  .projects {
+    height: 200vh;
+    margin-top: 15vh;
+    background-color: #ffffff;
+    width: 75.9vw;
+    margin-inline: auto;
+  }
+  .projects > h1 {
+    font-size: 75px;
+   color: #000000;
+    font-weight: 500;
+  }
+  .projects > p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+    
+  }
+  .tiles {
+    width: 100%;
+    margin-top: 8vh;
+    height: 150vh;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    
+  }
+  .tile {
+    background-color: #1d1d1d;
+    width: 48%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
+    height: 48%;
+   
+  }
+  .tile > h2, .tile >p, .tile > button {
+    margin-left: 21px;
+  }
+  .tile > p {
+    width: 90%;
+    margin-bottom: 43px;
+  }
+  .tile > img {
+    width: 100%;
+    
+    object-fit: contain;
+  }
+  .tile > button {
+    border: none;
+    padding: 15px 50px;
+    border-radius: 30px;
+    color: #101010;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+
+  .tile1 {
+    background-color: #381899;
+    width: 48%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
+    height: 48%;
+  }
+  .tile1 > h2, .tile1 >p, .tile1 > button {
+    margin-left: 21px;
+  }
+  .tile1 > p {
+    width: 94.7%;
+    
+  }
+  .tile1 > img {
+    width: 100%;
+   
+    object-fit: contain;
+  }
+  .tile1 > button {
+    border: none;
+    font-size: 20px;
+    padding: 15px 50px;
+    border-radius: 30px;
+    color: #101010;
+    background-color: #55DF00;
+    font-weight: 500;
+  }
+
+  
+  .tile2 {
+    background-color: #DD133B;
+    width: 48%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
+    height: 48%;
+  }
+  .tile2 > h2, .tile2 >p, .tile2 > button {
+    margin-left: 21px;
+  }
+  .tile2 > img {
+    width: 100%;
+    
+    object-fit: contain;
+  }
+  .tile2 > button {
+    border: none;
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #101010;
+    font-weight: 500;
+  }
+  .tile3 {
+    background-color: #FFFFFF;
+    width: 48%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
+
+    height: 48%;
+  }
+  .tile3 > h2, .tile3 >p, .tile3 > button {
+    margin-left: 21px;
+    color: #101010;
+  }
+  .tile3 > p {
+    font-weight: 500;
+  }
+  .tile3 > img {
+    width: 100%;
+    
+    object-fit: contain;
+  }
+  .tile3 > button {
+    border: none;
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #4730D4;
+    font-weight: 500;
+  }
+ .cut {
+  width: 77%;
+  margin: auto;
+  height: 1px;
+  background-color: #a3a3a3;
+ }
+  /* Add this CSS for the animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Add this CSS for the animation */
+  .about,
+  .tiles {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+  }
+
+  .about.appear
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .tiles.tiles-appear {
+    /* Add styles for when the .tiles section should appear */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+.freelance {
+  background-color: #101010;
+  margin-left: 170px;
+  margin-top: 80px;
+}
+.freelance > h1 {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.section {
+  background-color: #101010;
+}
+.stuff {
+  display: flex;
+  
+  height: 60vh;
+  width: 60vw;
+  margin: auto;
+}
+.dev {
+  flex: 1;
+  
+  gap: 0px;
+  
+flex-direction: column;
+}
+.dev > p {
+  font-size: 22px;
+  margin-top: 40px;
+}
+.dev button {
+  background-color: white;
+  align-self: auto;
+  margin-top: 55px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 20px 40px;
+  width: 13vw;
+  transition: transform 1s ease-in-out;
+}
+.dev button:hover {
+ transform: scale(1.2);
+}
+.dev > H1 {
+  margin-top: 100px;
+  font-weight: 300;
+}
+.fed {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  
+}
+.fed > img {
+  height:100% ;
+}
+.global {
+  position: absolute;
+  width: 13%;
+  right: 0;
+  top: 40%;
+}
+@media  (max-width:600px) {
+  main {
+    width: 100%;
+    background-color: #101010;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+header {
+
+  height: 8vh;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+  gap: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+ 
+}
+nav > a {
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  transition: transform 1s ease-in-out ;
+}
+nav > a:hover {
+  
+  transform: scale(1.4);
+  
+}
+
+  
+  header { 
+    padding: 20px;
+  }
+  .stuff {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100vw;
+    
+    margin: 4px;
+  }
+  .dev {
+    flex: 1;
+   
+    padding: 25px;
+  
+  }
+  .dev > p {
+    font-size: 18px;
+    margin-top: 0;
+    width: 95%;
+  }
+  .dev button {
+    background-color: white;
+    
+    margin-top: 15px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 20px;
+   margin-left: auto;
+    width: 90vw;
+    transition: transform 1s ease-in-out;
+  }
+  .dev button:hover {
+   transform: none
+  }
+  .dev > H1 {
+    margin-top: 0;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  .fed {
+    flex: 1;
+    display: flex;
+    display: none;
+    align-items: center;
+    
+  }
+  .fed > img {
+    width:90% ;
+    margin: auto; 
+  }
+  .global {
+    position: absolute;
+    width: 33%;
+    right: 0;
+    top: 20%;
+  }
+}
+@media  (max-width:600px) {
+  
+  .about {
+    background-color: #ffffff;
+    width: 100%;
+padding: 40px;
+    margin: auto;
+    z-index: 3;
+    
+overflow: visible;
+    height: 100vh;
+    
+  }
+  .left {
+    
+    text-align: start;
+    
+    margin-top: 50px;
+    
+    gap: 30px;
+    flex-direction: column;
+    
+    align-items: start;
+   
+    
+
+  }
+  .left > h1 {
+    font-size: 45px;
+    margin-left: 0;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  .left > p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 2px;
+    margin-left: 0;
+    
+  }
+  .images {
+    margin-left: 215px;
+    gap: 20px;
+    margin-top: 50px;
+    display: inline-flex;
+  }
+ .right {
+    display: flex;
+   
+    align-items: start;
+    margin-top: -130px;
+    height: 10vh;
+   
+  }
+  .arrow {
+    background-color: #101010;
+    margin-left: 500px;
+    width: 20vw;
+  }
+  .right > div {
+   
+    margin-left: 0;
+    height:156%;
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    width: 43%;
+   
+    border-radius: 1000px;
+    background-color: #000000;
+  }
+  .right > div > h1 {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .left a {
+    width: 20%;
+    transition: transform 1s ease-in-out;
+  }
+  .left a:hover {
+    width: 20%;
+    transform: scale(1.2);
+  }
+}
+@media  (max-width:600px) {
+  
+  .projects {
+    height: 400vh;
+    margin-top: 0vh;
+    background-color: #ffffff;
+    width: 85.9vw;
+    margin-inline: auto;
+  }
+  .projects > h1 {
+    font-size: 45px;
+    margin-bottom: 4vh;
+   color: #000000;
+    font-weight: 500;
+  }
+  .projects > p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+    
+  }
+  .tiles {
+    width: 100%;
+    margin-top: 8vh;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-wrap: nowrap;
+    
+    justify-content: space-between;
+    
+  }
+  .tile > p {
+    font-size: 16px;
+  }
+  .tile {
+    background-color: #1d1d1d;
+    width: 100%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
+    height: 38%;
+   
+  }
+  .tile > h2 {
+    font-size: 25px;
+  }
+  .tile1 > h2 {
+    font-size: 25px;
+  }
+  .tile2 > h2 {
+    font-size: 25px;
+    margin-top: 3vh;
+  }
+  .tile3 > h2 {
+    font-size: 25px;
+    margin-top: 3vh;
+  }
+  .tile > h2, .tile >p, .tile > button {
+    margin-left: 21px;
+  }
+  .tile > p {
+    width: 90%;
+    margin-bottom: 13px;
+  }
+  .tile > img {
+    width: 100%;
+    
+    object-fit: contain;
+  }
+  .tile > button {
+    border: none;
+    padding: 15px 50px;
+    border-radius: 0;
+    color: #101010;
+    font-weight: 500;
+    margin-top: 4vh;
+    font-size: 20px;
+    width: 89%;
+  }
+  .tile1 > button {
+    border: none;
+    padding: 15px 50px;
+    border-radius: 0;
+    color: #101010;
+    font-weight: 500;
+    font-size: 20px;
+    width: 89%;
+  }
+  .tile2 > button {
+    border: none;
+    padding: 15px 50px;
+    border-radius: 0;
+    color: #101010;
+    font-weight: 500;
+    
+    font-size: 20px;
+    width: 89%;
+  }
+  .tile3 > button {
+    border: none;
+    padding: 15px 50px;
+    border-radius: 0;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    width: 89%;
+  }
+
+
+  .tile1 {
+    background-color: #381899;
+    width: 100%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
+    height: 38%;
+  }
+  .tile1 > h2, .tile1 >p, .tile1 > button {
+    margin-left: 21px;
+  }
+  .tile1 > p {
+    width: 94.7%;
+    
+  }
+  .tile1 > img {
+    width: 100%;
+   
+    object-fit: contain;
+  }
+
+  
+  .tile2 {
+    background-color: #DD133B;
+    width: 100%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
+    height: 38%;
+  }
+  .tile2 > h2, .tile2 >p, .tile2 > button {
+    margin-left: 21px;
+  }
+  .tile2 > img {
+    width: 100%;
+    
+    object-fit: contain;
+  }
+
+  .tile3 {
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
+    height: 38%;
+  }
+  .tile3 > h2, .tile3 >p  {
+    margin-left: 21px;
+    color: #101010;
+  }
+  .tile > p {
+    font-weight: 400;
+  }
+  .tile1 > p {
+    font-weight: 300;
+  }
+  .tile2 > p {
+    font-weight: 300;
+  }
+  .tile3 > p {
+    font-weight: 400;
+  }
+  .tile3 > img {
+    width: 100%;
+    
+    object-fit: contain;
+  }
+
+ .cut {
+  display: none;
+ }
+  /* Add this CSS for the animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Add this CSS for the animation */
+  .about,
+  .tiles {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+  }
+
+  .about.appear
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .tiles.tiles-appear {
+    /* Add styles for when the .tiles section should appear */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+.freelance {
+  background-color: #101010;
+  margin-left: 170px;
+  margin-top: 80px;
+}
+.freelance > h1 {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.section {
+  background-color: #101010;
+}
+
+
+
+}
+</style>
+</head>
+<body >
+  <img class="global" src="./Group 3.png" alt="">
+<main>
+<header>
+    <nav>
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Projects</a>
+    </nav>
+  </header>
+  <section class="stuff">
+    <div class="dev"><H1>Freelance <br>
+      Designer & Developer</H1>
+     <p>I am Faddy, a passionate web developer, musician, freelancer from Oran, Algeria, bringing you web development and design from the future. My expertise is developing next-level websites that corresponds with my clients including full frontend design.</p>
+    <button>Contact me</button></div>
+      <div class="fed"> <img class="fad" src="./Group 4.png" alt=""></div>
+  </section>
+
+  <section class="landing">
+    
+   
+   <h1>Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin - Neddar Faddy Shahin</h1>
+  </section>
+</main>
+  <section class="about">
+    <div class="left">
+      <h1>Let me Introduce myself properly</h1>
+      <p>Hello again ! I'm Faddy, a self-taught web developer and design enthusiast with a dash of serious passion. Armed with a Masters in English Literature, I've woven my love for language into the intricate code and vibrant designs that define my work. Always hungry for new challenges, I bring a playful yet professional touch to every project. Join me on this exciting journey where pixels meet poetry, and every line of code tells a captivating story.</p>
+      <div class="images">
+        <a href=""><img src="./icons8-linkedin-96.png" alt=""></a>
+        <a href=""><img src="./icons8-instagram-96.png" alt=""></a>
+        <a href=""><img src="./icons8-facebook-96.png" alt=""></a>
+        <a href=""><img src="./icons8-email-96.png" alt=""></a>
+      </div>
+    </div>
+    <div class="right">
+      <div>
+      <h1>About me</h1>
+    </div>
+    </div>
+    <div class="cut"></div>
+  </section>
+  <section class="projects">
+    <h1>Let’s Walk Through My Projects</h1>
+    <p>Discover my creative journey  from a 
+      dynamic dice game to portfolio evolution, 
+      car rental aesthetics, and a vibrant concert 
+      booking concept – each project is a snapshot of 
+      passion and innovation.</p>
+      <div class="tiles">
+        <div class="tile">
+          <img src="./Screenshot (10) 1.png" alt="">
+          <h2>Dice Game Website</h2>
+          <p>A playful digital rendition of the classic dice game. Roll the virtual dice and enjoy a random outcome in this interactive and fun web application.</p>
+          <button>Visit</button>
+        </div>
+        <div class="tile1">  <img src="./Screenshot (14) 1.png" alt="">
+          <h2>Concert Reservation Website</h2>
+          <p>Step into the world of live music with this concert booking website non-operational concept. It captures the excitement of exploring, and planning for upcoming musical events.</p>
+          <button>Visit</button></div>
+        <div class="tile2">  <img src="./Screenshot (4) 1.png" alt="">
+          <h2>Car Rental Design Website</h2>
+          <p>Immerse yourself in the sleek and user-friendly design concept for a car rental service. Although non-functional, the interface reflects an intuitive and visually appealing rental experience.</p>
+          <button>Visit</button></div>
+        <div class="tile3"> <img src="./Screenshot (16) 1.png" alt="">
+          <h2>Old Portfolio Website</h2>
+          <p>Explore my earlier works and design evolution in this retrospective showcase. See the progression of my skills and creative journey through past projects.</p>
+          <button>Visit</button></div>
+      </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var aboutSection = document.querySelector('.about');
+      var tilesSection = document.querySelector('.tiles');
+  
+      if (!aboutSection || !tilesSection) {
+        console.error('.about or .tiles section not found');
+        return;
+      }
+  
+      var options = {
+        rootMargin: '0px',
+        threshold: 0.5 // Adjust the threshold as needed
+      };
+  
+      var aboutObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('appear');
+          } else {
+            entry.target.classList.remove('appear');
+          }
+        });
+      }, options);
+  
+      var tilesObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('tiles-appear');
+          }
+        });
+      }, options);
+  
+      aboutObserver.observe(aboutSection);
+      tilesObserver.observe(tilesSection);
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
